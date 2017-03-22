@@ -90,7 +90,7 @@ ROBOTSTXT_OBEY = True
 
 
 DEFAULT_ITEM_CLASS = 'production.items'
-IMAGES_STORE = 'static/images'
+IMAGES_STORE = 'app/static/images'
 
 DOWNLOAD_DELAY = 2
 

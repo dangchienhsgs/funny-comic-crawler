@@ -7,4 +7,5 @@ class ProdConfig(Config):
 
 
 class DevConfig(Config):
+    ENDPOINT = "http://localhost:5000/"
     pass
