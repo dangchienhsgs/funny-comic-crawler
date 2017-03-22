@@ -1,10 +1,10 @@
+import os
+
 from flask import Blueprint
 from flask import jsonify
 
-import os
-
 blueprint = Blueprint('main_content', __name__, url_prefix='/', static_folder='../static')
-endpoint = "http://localhost:5000"
+endpoint = "https://secret-mesa-70919.herokuapp.com"
 
 
 @blueprint.route('/')
@@ -14,18 +14,18 @@ def main():
             "id": 1,
             "title": "Kim Chi Cu Cai",
             "image": "",
-            "link": endpoint + "1"
+            "link": endpoint + "/kim-chi-cu-cai"
         },
         {
             "id": 2,
             "title": "Gintama",
             "image": "",
-            "link": ""
+            "link": endpoint + "/kim-chi-cu-cai"
         }
     ])
 
 
-@blueprint.route("abc")
+@blueprint.route("kim-chi-cu-cai")
 def content():
     files = os.listdir("app/static/images/full")
     data = []
