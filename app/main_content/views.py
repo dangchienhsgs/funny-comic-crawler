@@ -4,7 +4,7 @@ from flask import Blueprint
 from flask import jsonify
 
 blueprint = Blueprint('main_content', __name__, url_prefix='/', static_folder='../static')
-endpoint = "https://secret-mesa-70919.herokuapp.com"
+endpoint = "https://funny-comic-server.herokuapp.com"
 
 
 @blueprint.route('/')
