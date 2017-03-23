@@ -21,6 +21,12 @@ def main():
             "title": "Gintama",
             "image": "",
             "link": endpoint + "/kim-chi-cu-cai"
+        },
+        {
+            "id": 3,
+            "title": "Gintama",
+            "image": "",
+            "link": endpoint + "/kim-chi-cu-cai"
         }
     ])
 
