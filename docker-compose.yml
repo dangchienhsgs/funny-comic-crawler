@@ -1,0 +1,15 @@
+version: "2.0"
+
+services:
+  postgresql:
+    image: postgres
+    environment:
+        - POSTGRES_PASSWORD=123456
+        - POSTGRES_USER=dangchienhsgs
+        - POSTGRES_DB=funny_comic
+    volumes:
+        - /data/funnycomic-postgresql:/var/lib/postgresql/data
+    expose:
+        - "5432"
+    ports:
+        - "5432:5432"

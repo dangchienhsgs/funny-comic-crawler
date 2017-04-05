@@ -94,4 +94,13 @@ IMAGES_STORE = 'app/static/images'
 
 DOWNLOAD_DELAY = 2
 
-ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
+ITEM_PIPELINES = {'crawler.pipelines.MyImagesPipeline': 1}
+
+DATABASE = {
+    'drivername': 'postgres',
+    'host': 'localhost',
+    'port': '5432',
+    'username': 'dangchienhsgs',
+    'password': '123456',
+    'database': 'funny_comic'
+}

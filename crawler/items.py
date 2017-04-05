@@ -5,8 +5,9 @@
 # See documentation in:
 # http://doc.scrapy.org/en/latest/topics/items.html
 
-import scrapy
 import datetime
+
+import scrapy
 
 
 class FunnyComicCrawlerItem(scrapy.Item):
@@ -16,6 +17,7 @@ class FunnyComicCrawlerItem(scrapy.Item):
 
 
 class ImageItem(scrapy.Item):
-    image_urls = scrapy.Field()
-    images = scrapy.Field()
+    title = scrapy.Field()
+    image_url = scrapy.Field()
+    image_path = scrapy.Field()
     date = datetime.datetime.now()
